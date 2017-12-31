@@ -27,4 +27,15 @@ public class HelloWorldController {
     public HelloWorldBean helloWorldPathVariable(@PathVariable String name) {
         return new HelloWorldBean(String.format("Hello World, %s", name));
     }
+    
+    //Localization => LocaleResolver (Default:Locale.US)
+    //             => ResourceBundleResource
+    // Usage:
+    //Autowire MessageSource
+    //@RequestHeader(value="Accept-Language, required=false) Locale locale
+    //MessageSource.getMessage("helloWorld.message", null, locale)
+    @GetMapping(path="/hello-world-localized")
+    public String helloWorldLocalized() {
+        return "Good Morning"; // "Bonjour"
+    }
 }
