@@ -27,9 +27,10 @@ public class RestfulWebServicesApplication {
 	// To read messages from the appropriate message properties file,
 	// and customized them based on the input accept header
 	@Bean
-	public MessageSource bundleMessageSource() {
+	public MessageSource messageSource() {
 	    ResourceBundleMessageSource messageSource = new ResourceBundleMessageSource();
-	    messageSource.setBasename("messages");
+	    messageSource.setBasename("locale/messages");
+	    messageSource.setDefaultEncoding("UTF-8");
 	    return messageSource;
 	}
 }
