@@ -2,3 +2,5 @@
 /mvnw.cmd
 
 /target
+.idea/
+restful-web-services.iml
