@@ -6,8 +6,10 @@ import com.fasterxml.jackson.annotation.JsonFilter;
 public class SomeBean {
     private String field1;
     private String field2;
+
+    // @JsonIgnore : It will ignore this property every time => Static filtering
     private String field3;
-    
+
     public SomeBean(String field1, String field2, String field3) {
         super();
         this.field1 = field1;
@@ -38,5 +40,5 @@ public class SomeBean {
     public void setField3(String field3) {
         this.field3 = field3;
     }
-    
+
 }
