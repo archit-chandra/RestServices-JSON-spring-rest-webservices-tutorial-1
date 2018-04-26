@@ -8,14 +8,16 @@ public class PersonVersioningController {
 
     //@GetMapping("/v1/person")
     //@GetMapping(value = "/person/param", params = "version=1")
-    @GetMapping(value = "/person/header", headers = "X-API-VERSION=1")
+    //@GetMapping(value = "/person/header", headers = "X-API-VERSION=1")
+    @GetMapping(value = "/person/produces", produces = "application/vnd.company.app-v1+json")
     public PersonV1 personV1() {
         return new PersonV1("Bob Charley");
     }
 
     //@GetMapping("/v2/person")
     //@GetMapping(value = "/person/param", params = "version=2")
-    @GetMapping(value = "/person/header", headers = "X-API-VERSION=2")
+    //@GetMapping(value = "/person/header", headers = "X-API-VERSION=2")
+    @GetMapping(value = "/person/produces", produces = "application/vnd.company.app-v2+json")
     public PersionV2 persionV2() {
         return new PersionV2(new Name("Bob", "Charlie"));
     }
