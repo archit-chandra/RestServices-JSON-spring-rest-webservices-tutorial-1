@@ -2,3 +2,12 @@
 /mvnw.cmd
 
 /target
+.settings/
+.idea/
+restful-web-services.iml
+/
+.gitignore_REMOTE_2260
+.gitignore_LOCAL_2260
+.gitignore_BASE_2260
+.gitignore_BACKUP_2260
+.gitignore.orig
