@@ -11,3 +11,4 @@ restful-web-services.iml
 .gitignore_BASE_2260
 .gitignore_BACKUP_2260
 .gitignore.orig
+classes/artifacts/restful_web_services_war_exploded/META-INF/MANIFEST.MF
